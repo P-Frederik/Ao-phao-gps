@@ -40,17 +40,7 @@ Bản đồ được hiển thị bằng thư viện Leaflet kết hợp OpenStr
 
 ---
 
-## Giao diện
 
-### Bản đồ GPS
-
-![Map Preview](./preview/map.png)
-
-### Theo dõi vị trí
-
-![Tracking Preview](./preview/tracking.png)
-
----
 ## Tác giả
 
 Developed by Gia Phát
