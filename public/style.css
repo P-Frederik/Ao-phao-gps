@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: Arial, sans-serif;
+
+  overflow: hidden;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 60px;
+
+  background: #111827;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MAP */
+#map {
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+/* CARD */
+.info-card {
+  position: fixed;
+
+  top: 80px;
+  right: 20px;
+
+  width: 300px;
+
+  background: rgba(17, 24, 39, 0.95);
+
+  color: white;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  z-index: 9999;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+  backdrop-filter: blur(10px);
+}
+
+/* CARD HEADER */
+.card-header {
+  padding: 14px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #1e293b;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.card-header button {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background: #334155;
+  color: white;
+
+  font-size: 18px;
+}
+
+/* BODY */
+.card-body {
+  padding: 16px;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.card-body hr {
+  border: none;
+  border-top: 1px solid #334155;
+
+  margin: 12px 0;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+/* DRAG CARD */
+.info-card {
+  cursor: move;
+  user-select: none;
+}
+
+/* LOCATION BUTTON */
+.locate-btn {
+  position: fixed;
+
+  bottom: 30px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+  transition: 0.2s;
+}
+
+.locate-btn:hover {
+  transform: scale(1.08);
+}

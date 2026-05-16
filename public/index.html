@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GPS Route</title>
+
+    <!-- LEAFLET -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- ROUTING -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">GPS TRACKING</div>
+
+    <!-- INFO CARD -->
+    <div class="info-card">
+      <div class="card-header">
+        <span>🧭 Thông tin đường đi</span>
+
+        <button id="toggleBtn">−</button>
+      </div>
+
+      <div class="card-body" id="cardBody">
+        <div id="gps">Đang lấy vị trí...</div>
+      </div>
+    </div>
+
+    <!-- LOCATION BUTTON -->
+    <button class="locate-btn" id="locateBtn">📍</button>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- LEAFLET -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- ROUTING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.min.js"></script>
+
+    <!-- APP -->
+    <script src="./app.js"></script>
+  </body>
+</html>
